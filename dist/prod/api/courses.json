@@ -1,0 +1,34 @@
+{
+	"data": [{
+		"title": "Universitarios",
+		"details": [
+			{
+			"year" : "2011",
+			"institute_name" : "Dr. Jose Gregorio Hernandez",
+			"title"      : "Ingeniero en Sistemas",
+			"resume"     : "",
+			"start_date" :"",
+			"end_date"   :""
+
+			},{
+				"year" : "2011",
+				"institute_name" : "IUTM",
+				"title"      : "Tecnico superior en Informatica",
+				"resume"     : "",
+				"start_date" :"",
+				"end_date"   :""
+
+			}
+		]
+		}, {
+			"title": "Cursos",
+			"details": [{
+				"year" : "2011",
+				"institute_name" : "CEDIC",
+				"title"      : "Algoritmo y Programacion",
+				"resume"     : "",
+				"start_date" :"",
+				"end_date"   :""
+			}]
+		}]
+}
