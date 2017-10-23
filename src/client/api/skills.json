@@ -2,21 +2,21 @@
 	"data": [{
 		"title": "Base de Datos",
 		"details": [{
+			"_id": 1,
+			"name": "Firebird/Interbase",
+			"rate": "50"
+		}, {
 				"_id": 1,
 				"name": "MongoDB",
 				"rate": "50"
+				}, {
+					"_id": 1,
+					"name": "PostgreSql",
+					"rate": "60"
 			}, {
 				"_id": 1,
 				"name": "MySql",
 				"rate": "75"
-			}, {
-				"_id": 1,
-				"name": "PostgreSql",
-				"rate": "60"
-			}, {
-				"_id": 1,
-				"name": "Firebird/Interbase",
-				"rate": "50"
 			}, {
 				"_id": 1,
 				"name": "OpenEdge /Progress",
@@ -25,7 +25,7 @@
 
 		]
 	}, {
-		"title": "Lenguaje de Programacion",
+		"title": "Programación",
 		"details": [{
 				"_id": 1,
 				"name": "PHP",
@@ -76,10 +76,6 @@
 	}, {
 		"title": "Otros",
 		"details": [{
-				"_id": 1,
-				"name": "XML",
-				"rate": "80"
-			}, {
 				"_id": 1,
 				"name": "metodología MVC",
 				"rate": "80"

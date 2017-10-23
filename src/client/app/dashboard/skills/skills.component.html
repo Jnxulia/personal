@@ -1,51 +1,21 @@
-<!--<div class="animate" >
-  <div class="animate">
-    <div class="row">
-      <div class="col-md-12 ">
-        <div class="card">
-          <div class="card-header card-primary card-inverse">
-            <h4 class="card-title"> <i class="fa fa-tasks" aria-hidden="true"></i> Resumen</h4>
-          </div>
-          <div class="card card-default card-block">
-            <ul class="timeline" >
-              <li  *ngFor="let experience of experiences; let i = index" [attr.data-index]="i" [ngClass]="i % 2 == 0 ?''   : 'timeline-inverted'" >
-                <div class="timeline-badge"  [ngClass]="getColor(i)">{{experience.year}}</div>
-                <div class="timeline-panel">
-                  <div class="timeline-heading">
-                    <p class="timeline-title"><b>{{experience.company}}</b> <i>{{experience.position}}</i></p>
-                  </div>
-                  <div class="timeline-body">
-                    {{experience.resume}}
-                    <p><small class="text-muted">{{experience.start_date}}-{{experience.end_date}}</small></p>
-                  </div>
-                </div>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
--->
 <div class="animate">
   <div class="animate">
     <div class="row">
-      <div class="col-md-12 ">
+      <div class="col-sm-12 ">
         <div class="card">
           <div class="card-header card-primary card-inverse">
-            <h4 class="card-title"><i class="fa fa-book"></i> Estudios y Habilidades</h4>
+            <h4 class="card-title"><i class="fa fa-book"></i> Habilidades</h4>
           </div>
           <div class="card card-default card-block">
             <div class="row">
-              <div  *ngFor="let skill of skills; let i = index" [attr.data-index]="i" class="col-md-3" >
+              <div  *ngFor="let skill of skills; let i = index" [attr.data-index]="i" class="col-sm-3" >
                 <div class="card">
                   <div class="card-header card-info card-inverse">
-                    <h1 class="card-title">{{skill.title}}</h1>
+                    <h5 class="card-title">{{skill.title}}</h5>
                   </div>
                   <div class="card-block">
                     <div  *ngFor="let detail of skill.details; let j = index" [attr.data-index]="j" >
-                      <progressbar  [animate]="true" class="progress-striped active"  min="1" max="100" value="{{detail.rate}}" [type]="i % 2 == 0 ?'success'   : 'danger'"><i>{{detail.name}}</i></progressbar>
+                      <progressbar  [animate]="true" class="progress-striped active"  min="1" max="100" value="{{detail.rate}}" [type]="i % 2 == 0 ?'success'   : 'danger'">{{detail.name}}</progressbar>
                     </div>
                   </div>
                 </div>

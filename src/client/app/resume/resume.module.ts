@@ -1,3 +1,4 @@
+
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterModule } from '@angular/router';
@@ -10,8 +11,6 @@ import { ExperienceModule }   from '../dashboard/experience/experience.module';
 import { StudiesModule }   from '../dashboard/studies/studies.module';
 import { ResumeComponent } from './resume.component';
 
-import { SidebarComponent } from '../shared/index';
-import { FooterComponent } from '../shared/index';
 
 @NgModule({
     imports: [
@@ -24,12 +23,8 @@ import { FooterComponent } from '../shared/index';
         ExperienceModule,
         StudiesModule
     ],
-    declarations: [ResumeComponent
-  //  , SkillsModule
-    ],
-    exports: [ResumeComponent
-    //,SkillsModule
-    ]
+    declarations: [ResumeComponent],
+    exports: [ResumeComponent]
 })
 
 export class ResumeModule { }

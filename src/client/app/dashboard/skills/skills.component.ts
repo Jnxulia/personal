@@ -5,13 +5,10 @@ import { SkillModel } from '../../models/skill.model';
 //import { ProgressbarModule   } from 'ng2-bootstrap/ng2-bootstrap';
 
 @Component({
-	//	import : [ProgressbarModule, BrowserModule],
 		moduleId: module.id,
     selector: 'skills-cmp',
     templateUrl: './skills.component.html',
 		providers: [SkillService,SkillModel]
-
-
 })
 
 export class SkillsComponent {

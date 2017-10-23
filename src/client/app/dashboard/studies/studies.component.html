@@ -1,26 +1,23 @@
 <div class="animate">
   <div class="animate">
     <div class="row">
-      <div class="col-md-12 ">
+      <div class="col-sm-12 ">
         <div class="card">
           <div class="card-header card-primary card-inverse">
             <h4 class="card-title"><i class="fa fa-certificate" aria-hidden="true"></i>Estudios</h4>
           </div>
           <div class="card card-default card-block">
             <div class="row">
-              <div  *ngFor="let course of courses; let i = index" [attr.data-index]="i" class="col-md-12" >
+              <div  *ngFor="let course of courses; let i = index" [attr.data-index]="i" class="col-sm-6" >
                 <div class="card">
                   <div class="card-header card-info card-inverse">
-                    <h1 class="card-title">{{course.title}}</h1>
+                    <h5 class="card-title">{{course.title}}</h5>
                   </div>
                   <div class="card-block">
                     <div  *ngFor="let detail of course.details; let j = index" [attr.data-index]="j" >
-{{detail.year}}
-{{detail.institute_name}}
-{{detail.title}}
-
-
-
+                    {{detail.year}}
+                    {{detail.institute_name}}
+                    {{detail.title}}
                     </div>
                   </div>
                 </div>
